@@ -28,7 +28,7 @@
 
     <div class="system-state">
       <span class="pulse"></span>
-      <div><b>SYSTEM STATUS</b><small>PRE-LAUNCH · CONTRACTS TBA</small></div>
+      <div><b>SYSTEM STATUS</b><small>$ADD LIVE · MODULES PRE-LAUNCH</small></div>
     </div>
 
     <nav class="side-nav" aria-label="Dashboard navigation">
@@ -55,8 +55,8 @@
     </div>
 
     <div id="notice" class="notice" role="status" aria-live="polite">
-      <strong>PRE-LAUNCH MODE</strong>
-      <span>Contract actions remain locked until mainnet deployment and source verification are complete.</span>
+      <strong>$ADD MAINNET VERIFIED</strong>
+      <span>The token and TeamVestingWallet are live and source-verified. Farming, LP and claim actions remain locked until their dedicated contracts are verified.</span>
     </div>
 
     <section id="dashboard" class="view active" data-view="dashboard">
@@ -64,27 +64,30 @@
         <div><span class="eyebrow">CONTROL ROOM // 01</span><h1>MY DASHBOARD</h1></div>
         <p>One place to monitor your NFTs, LP position, eligibility, and $ADD rewards.</p>
       </div>
+
       <div class="metric-grid">
-        <article><span>WALLET</span><strong id="metric-wallet">NOT CONNECTED</strong><small>Connect to load on-chain data</small></article>
+        <article><span>WALLET</span><strong id="metric-wallet">NOT CONNECTED</strong><small>Connect to load wallet context</small></article>
         <article><span>ELIGIBLE NFTs</span><strong>—</strong><small>Snapshot source pending</small></article>
         <article><span>STAKED NFTs</span><strong>—</strong><small>NFT farming not live</small></article>
         <article><span>LP DEPOSITED</span><strong>—</strong><small>Official pool not published</small></article>
         <article class="accent"><span>CLAIMABLE $ADD</span><strong>—</strong><small>Claim contract not published</small></article>
-        <article><span>TOTAL CLAIMED</span><strong>—</strong><small>No verified history yet</small></article>
+        <article><span>TOTAL CLAIMED</span><strong>—</strong><small>No verified claim history yet</small></article>
       </div>
+
       <div class="dashboard-grid">
         <article class="panel status-panel">
-          <div class="panel-head"><span>LAUNCH CHECKLIST</span><b>3 / 7 PREPARED</b></div>
+          <div class="panel-head"><span>LAUNCH CHECKLIST</span><b>5 / 7 PREPARED</b></div>
           <ul class="check-list">
             <li class="done"><i></i><span>Final $ADD tokenomics</span><b>LOCKED</b></li>
             <li class="done"><i></i><span>Source repository</span><b>PUBLIC</b></li>
             <li class="done"><i></i><span>Wallet role separation</span><b>DEFINED</b></li>
-            <li><i></i><span>Testnet deployment</span><b>PENDING</b></li>
+            <li class="done"><i></i><span>Testnet deployment</span><b>COMPLETE</b></li>
             <li><i></i><span>Independent review</span><b>PENDING</b></li>
-            <li><i></i><span>Mainnet deployment</span><b>LOCKED</b></li>
+            <li class="done"><i></i><span>$ADD mainnet deployment</span><b>VERIFIED</b></li>
             <li><i></i><span>Farming and claim activation</span><b>LOCKED</b></li>
           </ul>
         </article>
+
         <article class="panel allocation-panel">
           <div class="panel-head token-panel-title"><span><img src="add-token-logo.png" alt="">$ADD ALLOCATION</span><b>1,000,000,000</b></div>
           <div class="allocation-bar" aria-label="$ADD token allocation"><i class="farming"></i><i class="community"></i><i class="liquidity"></i><i class="team"></i></div>
@@ -99,7 +102,7 @@
     </section>
 
     <section id="nft-farming" class="view" data-view="nft-farming">
-      <div class="view-heading"><div><span class="eyebrow">REWARD ENGINE // 02</span><h1>NFT FARMING</h1></div><p>Stake eligible ADDING MACHINE V2 NFTs and earn rarity-weighted $ADD rewards.</p></div>
+      <div class="view-heading"><div><span class="eyebrow">REWARD ENGINE // 02</span><h1>NFT FARMING</h1></div><p>Stake eligible ADDING MACHINE V2 NFTs and earn rarity-weighted $ADD rewards after the farming module is deployed and verified.</p></div>
       <div class="callout"><b>RARITY-BASED REWARDS</b><span>Final rates and emissions will be published only after the farming contract and sustainability model pass testing.</span></div>
       <div class="rarity-grid">
         <article><span>COMMON</span><strong>RATE TBA</strong><small>Base reward weight</small></article>
@@ -108,68 +111,96 @@
         <article><span>LEGENDARY</span><strong>RATE TBA</strong><small>Rarity multiplier pending</small></article>
         <article><span>MYTHIC</span><strong>RATE TBA</strong><small>Rarity multiplier pending</small></article>
       </div>
-      <article class="panel empty-state"><span class="empty-icon">AM</span><h2>NO NFT DATA LOADED</h2><p>Connect your wallet after the verified NFT farming contract is published.</p><button class="disabled-action" type="button" disabled>STAKING LOCKED</button></article>
+      <article class="panel empty-state"><span class="empty-icon">AM</span><h2>NO NFT FARMING DATA</h2><p>Connect your wallet after the verified NFT farming contract is published.</p><button class="disabled-action" type="button" disabled>STAKING LOCKED</button></article>
     </section>
 
     <section id="lp-farming" class="view" data-view="lp-farming">
-      <div class="view-heading"><div><span class="eyebrow">LIQUIDITY ENGINE // 03</span><h1>LP FARMING</h1></div><p>Deposit approved LP tokens to support ecosystem liquidity and track rewards.</p></div>
+      <div class="view-heading"><div><span class="eyebrow">LIQUIDITY ENGINE // 03</span><h1>LP FARMING</h1></div><p>Deposit approved LP tokens only after the official pool and farming contract are published and verified.</p></div>
       <div class="metric-grid compact">
         <article><span>OFFICIAL POOL</span><strong>TBA</strong><small>Address will be verified on-chain</small></article>
         <article><span>APR</span><strong>—</strong><small>Calculated from live emissions</small></article>
-        <article><span>YOUR POOL SHARE</span><strong>—</strong><small>Wallet connection required</small></article>
+        <article><span>YOUR POOL SHARE</span><strong>—</strong><small>Verified pool required</small></article>
         <article><span>PENDING REWARDS</span><strong>—</strong><small>Farm not activated</small></article>
       </div>
-      <article class="panel action-panel"><div><span class="eyebrow">DEPOSIT CONTROL</span><h2>OFFICIAL LP ONLY</h2><p>The deposit interface will unlock after the verified $ADD pool and farming contract addresses are published.</p></div><button class="disabled-action" type="button" disabled>LP FARMING LOCKED</button></article>
+      <article class="panel action-panel"><div><span class="eyebrow">DEPOSIT CONTROL</span><h2>OFFICIAL LP ONLY</h2><p>The deposit interface will unlock after the verified $ADD pool and LP farming contract addresses are published.</p></div><button class="disabled-action" type="button" disabled>LP FARMING LOCKED</button></article>
     </section>
 
     <section id="airdrop" class="view" data-view="airdrop">
-      <div class="view-heading"><div><span class="eyebrow">COMMUNITY ALLOCATION // 04</span><h1>AIRDROP REGISTRATION</h1></div><p>Register a verified wallet for active community campaigns without exposing wallet secrets.</p></div>
+      <div class="view-heading"><div><span class="eyebrow">COMMUNITY ALLOCATION // 04</span><h1>AIRDROP REGISTRATION</h1></div><p>Campaign registration and claim logic remain separate from the live $ADD token contract.</p></div>
       <div class="form-layout">
         <form id="airdrop-form" class="panel machine-form">
           <label>CONNECTED WALLET<input id="registration-wallet" type="text" placeholder="Connect wallet to continue" readonly></label>
-          <label>CAMPAIGN<select disabled><option>No active campaign</option></select></label>
+          <label>CAMPAIGN<select disabled><option>No active on-site campaign</option></select></label>
           <label class="consent"><input type="checkbox" disabled><span>I understand that registration does not guarantee an allocation.</span></label>
           <button class="disabled-action" type="submit" disabled>REGISTRATION LOCKED</button>
         </form>
-        <article class="panel steps-panel"><span class="eyebrow">VERIFICATION FLOW</span><ol><li><b>01</b>Connect EVM wallet</li><li><b>02</b>Sign a gas-free message</li><li><b>03</b>Verify X through official OAuth</li><li><b>04</b>Pass campaign eligibility checks</li></ol><p>We will never request a seed phrase, private key, wallet password, or X password.</p></article>
+        <article class="panel steps-panel">
+          <span class="eyebrow">VERIFICATION FLOW</span>
+          <ol>
+            <li><b>01</b>Connect EVM wallet</li>
+            <li><b>02</b>Sign a gas-free message only when an official campaign is active</li>
+            <li><b>03</b>Complete official campaign requirements</li>
+            <li><b>04</b>Pass eligibility checks</li>
+          </ol>
+          <p>The project will never request a seed phrase, private key, wallet password, or social account password.</p>
+        </article>
       </div>
     </section>
 
     <section id="eligibility" class="view" data-view="eligibility">
-      <div class="view-heading"><div><span class="eyebrow">SNAPSHOT TERMINAL // 05</span><h1>ELIGIBILITY CHECKER</h1></div><p>Check migration, compensation, seasonal holder, and community campaign eligibility.</p></div>
+      <div class="view-heading"><div><span class="eyebrow">SNAPSHOT TERMINAL // 05</span><h1>ELIGIBILITY CHECKER</h1></div><p>Check migration, compensation, seasonal holder, and community campaign eligibility after the audited dataset is connected.</p></div>
       <form id="eligibility-form" class="checker">
         <label for="eligibility-wallet">EVM WALLET ADDRESS</label>
         <div><input id="eligibility-wallet" type="text" inputmode="text" autocomplete="off" placeholder="0x…"><button type="submit">CHECK ADDRESS</button></div>
       </form>
       <div id="eligibility-result" class="panel result-panel" aria-live="polite"><span>AWAITING ADDRESS</span><strong>No wallet checked</strong><p>The final snapshot dataset will be connected before claims open.</p></div>
-      <div class="rule-grid"><article><span>V1 HOLDER</span><p>Eligibility follows the locked snapshot and approved holder rules.</p></article><article><span>PAID PUBLIC MINT</span><p>Only verified community records are included; internal wallets are excluded.</p></article><article><span>SEASONAL NFT</span><p>Campaign-specific rules and snapshot time will be displayed here.</p></article></div>
+      <div class="rule-grid">
+        <article><span>V1 HOLDER</span><p>Eligibility follows the locked snapshot and approved holder rules.</p></article>
+        <article><span>PAID PUBLIC MINT</span><p>Only verified community records are included; internal wallets are excluded.</p></article>
+        <article><span>SEASONAL NFT</span><p>Campaign-specific rules and snapshot time will be displayed here.</p></article>
+      </div>
     </section>
 
     <section id="claim" class="view" data-view="claim">
       <div class="view-heading"><div><span class="eyebrow">DISTRIBUTION TERMINAL // 06</span><h1>CLAIM ADD</h1></div><p>Review allocation and claim status before signing any on-chain transaction.</p></div>
       <article class="claim-card panel">
-        <div class="claim-total"><span>AVAILABLE TO CLAIM</span><strong>— <small>$ADD</small></strong><p>Connect wallet · Claim contract TBA</p></div>
-        <dl><div><dt>Eligible allocation</dt><dd>—</dd></div><div><dt>Previously claimed</dt><dd>—</dd></div><div><dt>Remaining</dt><dd>—</dd></div><div><dt>Proof status</dt><dd>NOT LOADED</dd></div></dl>
+        <div class="claim-total"><span>AVAILABLE TO CLAIM</span><strong>— <small>$ADD</small></strong><p>Claim contract not deployed</p></div>
+        <dl>
+          <div><dt>Eligible allocation</dt><dd>—</dd></div>
+          <div><dt>Previously claimed</dt><dd>—</dd></div>
+          <div><dt>Remaining</dt><dd>—</dd></div>
+          <div><dt>Proof status</dt><dd>NOT LOADED</dd></div>
+        </dl>
         <button class="disabled-action" type="button" disabled>CLAIM LOCKED</button>
       </article>
       <p class="safety-note">Verify the network, contract address, amount, and gas estimate in your wallet before confirming. Claims never require approval to spend unrelated tokens.</p>
     </section>
 
     <section id="history" class="view" data-view="history">
-      <div class="view-heading"><div><span class="eyebrow">LEDGER // 07</span><h1>REWARD HISTORY</h1></div><p>A unified, verifiable record of NFT farming, LP farming, airdrops, and claims.</p></div>
+      <div class="view-heading"><div><span class="eyebrow">LEDGER // 07</span><h1>REWARD HISTORY</h1></div><p>A unified, verifiable record of future NFT farming, LP farming, airdrops, and claims.</p></div>
       <div class="history-filters"><button class="active" type="button">ALL</button><button type="button">NFT FARMING</button><button type="button">LP FARMING</button><button type="button">AIRDROP</button><button type="button">CLAIM</button></div>
-      <div class="table-wrap panel"><table><thead><tr><th>DATE</th><th>TYPE</th><th>CAMPAIGN / POOL</th><th>AMOUNT</th><th>STATUS</th><th>TRANSACTION</th></tr></thead><tbody><tr><td colspan="6"><div class="table-empty">NO VERIFIED REWARD HISTORY<br><small>Connect a wallet after contracts are activated.</small></div></td></tr></tbody></table></div>
+      <div class="table-wrap panel"><table><thead><tr><th>DATE</th><th>TYPE</th><th>CAMPAIGN / POOL</th><th>AMOUNT</th><th>STATUS</th><th>TRANSACTION</th></tr></thead><tbody><tr><td colspan="6"><div class="table-empty">NO VERIFIED REWARD HISTORY<br><small>History will appear after reward modules are activated.</small></div></td></tr></tbody></table></div>
     </section>
 
     <section id="transparency" class="view" data-view="transparency">
       <div class="view-heading"><div><span class="eyebrow">PUBLIC RECORD // 08</span><h1>TRANSPARENCY &amp; CONTRACTS</h1></div><p>Verify every official address and source before interacting with the ecosystem.</p></div>
+
       <div class="contract-grid">
-        <article class="panel contract-card"><div><span>$ADD TOKEN</span><b>MAINNET</b></div><strong>TBA</strong><small>Not deployed · do not trust unofficial addresses</small></article>
-        <article class="panel contract-card"><div><span>TEAM VESTING</span><b>MAINNET</b></div><strong>TBA</strong><small>90-day cliff + 900-day linear vesting</small></article>
-        <article class="panel contract-card"><div><span>NFT FARMING</span><b>MAINNET</b></div><strong>TBA</strong><small>Security review required</small></article>
-        <article class="panel contract-card"><div><span>LP FARMING</span><b>MAINNET</b></div><strong>TBA</strong><small>Official pool required</small></article>
-        <article class="panel contract-card"><div><span>AIRDROP CLAIM</span><b>MAINNET</b></div><strong>TBA</strong><small>Distribution root and source required</small></article>
+        <article class="panel contract-card">
+          <div><span>$ADD TOKEN</span><b>MAINNET · VERIFIED</b></div>
+          <strong><a href="https://robinhoodchain.blockscout.com/address/0xcF1cC6FFcA6216354a2723d1e4B0cf9285938ea2" target="_blank" rel="noopener noreferrer">0xcF1c…8ea2</a></strong>
+          <small>Adding Machine (ADD) · exact-match source verification</small>
+        </article>
+        <article class="panel contract-card">
+          <div><span>TEAM VESTING</span><b>MAINNET · VERIFIED</b></div>
+          <strong><a href="https://robinhoodchain.blockscout.com/address/0x45B8b222Ea39a901c89bcEFfAf775f00eB12DC16" target="_blank" rel="noopener noreferrer">0x45B8…DC16</a></strong>
+          <small>90-day cliff + 900-day linear vesting · exact-match source verification</small>
+        </article>
+        <article class="panel contract-card"><div><span>NFT FARMING</span><b>MAINNET</b></div><strong>TBA</strong><small>Not deployed · security testing required</small></article>
+        <article class="panel contract-card"><div><span>LP FARMING</span><b>MAINNET</b></div><strong>TBA</strong><small>Not deployed · official pool required</small></article>
+        <article class="panel contract-card"><div><span>AIRDROP CLAIM</span><b>MAINNET</b></div><strong>TBA</strong><small>Not deployed · distribution data and source verification required</small></article>
       </div>
+
       <article class="panel registry">
         <div class="panel-head"><span>OFFICIAL WALLET REGISTRY</span><b>ROLE SEPARATION</b></div>
         <dl>
@@ -179,7 +210,40 @@
           <div><dt>Team beneficiary</dt><dd><code>0x3F424A647A7A307663156e3c4f285D27c09DAa1e</code><button data-copy="0x3F424A647A7A307663156e3c4f285D27c09DAa1e" type="button">COPY</button></dd></div>
         </dl>
       </article>
-      <div class="source-row"><a href="https://github.com/machinesadding-ship-it/adding-machine-add-final" target="_blank" rel="noopener noreferrer">VIEW OFFICIAL SOURCE →</a><span>Compiler 0.8.24 · EVM Shanghai · Optimizer 200</span></div>
+
+      <article class="panel registry">
+        <div class="panel-head"><span>VERIFIED MAINNET DEPLOYMENTS</span><b>ROBINHOOD CHAIN · 4663</b></div>
+        <dl>
+          <div>
+            <dt>SC 1 — TeamVestingWallet</dt>
+            <dd>
+              <code>0x45B8b222Ea39a901c89bcEFfAf775f00eB12DC16</code>
+              <button data-copy="0x45B8b222Ea39a901c89bcEFfAf775f00eB12DC16" type="button">COPY</button>
+            </dd>
+          </div>
+          <div>
+            <dt>SC 1 deployment transaction</dt>
+            <dd><a href="https://robinhoodchain.blockscout.com/tx/0xf74eb8f5a5f6ee504d0ad26483ef26f2f4347a35e5dd2698c18fa3f295861e0e" target="_blank" rel="noopener noreferrer">VIEW ON BLOCKSCOUT</a></dd>
+          </div>
+          <div>
+            <dt>SC 2 — AddingMachineToken</dt>
+            <dd>
+              <code>0xcF1cC6FFcA6216354a2723d1e4B0cf9285938ea2</code>
+              <button data-copy="0xcF1cC6FFcA6216354a2723d1e4B0cf9285938ea2" type="button">COPY</button>
+            </dd>
+          </div>
+          <div>
+            <dt>SC 2 deployment transaction</dt>
+            <dd><a href="https://robinhoodchain.blockscout.com/tx/0x36866e0f8451e4bd52dda79b967b77015adbc5e281a7247bafd69ed4849a5376" target="_blank" rel="noopener noreferrer">VIEW ON BLOCKSCOUT</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <div class="source-row">
+        <a href="https://github.com/machinesadding-ship-it/adding-machine-add-final" target="_blank" rel="noopener noreferrer">VIEW OFFICIAL SOURCE →</a>
+        <span>Compiler 0.8.24 · EVM Shanghai · Optimizer 200</span>
+      </div>
+
       <div class="scam-warning"><strong>SCAM WARNING</strong><span>Never share your seed phrase or private key. Verify links through <b>@addingmachinee</b> and this official website.</span></div>
     </section>
   </main>
