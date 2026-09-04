@@ -4,7 +4,7 @@ const CONFIG = {
   v2Contract: "TBA",
   addMaxSupply: "1,000,000,000",
   addContract: "TBA",
-  openseaV1Url: "https://opensea.io/collection/adding-machine",
+  openseaV2Url: "https://opensea.io/collection/adding-machine-528868073/overview",
   xUrl: "https://x.com/addingmachinee"
 };
 
@@ -18,5 +18,5 @@ nav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => 
   nav.classList.remove("open");
   toggle?.setAttribute("aria-expanded", "false");
 }));
-document.querySelectorAll("[data-opensea]").forEach(link => { link.href = CONFIG.openseaV1Url; });
+document.querySelectorAll("[data-opensea]").forEach(link => { link.href = CONFIG.openseaV2Url; });
 document.querySelectorAll("[data-x-link]").forEach(link => { link.href = CONFIG.xUrl; });
